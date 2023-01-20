@@ -22,10 +22,10 @@
 
 <h3 align="left">Notes</h3>
 <p align="left"> 
-> EAS can still easily be detected using integrity checks as it patches the .text section.
-> EAS can be detected if the binary you are working against keeps copies of the proper vtable addresses.
-> If you have the option to just use an inline hook take it. While EAS and inline hooking are both very fast inline hooking is still faster.
-  EAS generates a few extra instructions around the area of memory it replaces with the hook in order to defeat first-byte-jump detection.  
+> EAS can still easily be detected using integrity checks as it patches the .text section. <br/>
+> EAS can be detected if the binary you are working against keeps copies of the proper vtable addresses.<br/>
+> If you have the option to just use an inline hook take it. While EAS and inline hooking are both very fast inline hooking is still faster.<br/>
+  EAS generates a few extra instructions around the area of memory it replaces with the hook in order to defeat first-byte-jump detection.  <br/>
   This means that EAS will be running a few extra instructions every time the hook is called and while the performance difference is not noticable, 
   in this case one instruction is faster than 5-10.
 </p>
